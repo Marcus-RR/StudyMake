@@ -6,7 +6,7 @@ RELEASE_FLAGS = -O2 -Wall -DNDEBUG
 DEBUG_FLAGS   = -g -O0 -Wall
 RELEASE_EXEC  = hello
 DEBUG_EXEC    = hello-dbg
-#SOURCE        =
+SOURCE        = hello.cpp
 
 all: debug release
 
@@ -22,4 +22,4 @@ $(RELEASE_EXEC): hello.cpp
 
 clean:
 	rm -f $(RELEASE_EXEC) $(DEBUG_EXEC)
-
+	
